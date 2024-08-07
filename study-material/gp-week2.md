@@ -3,7 +3,9 @@
 Ini group project kedua kalian di phase 2 , seperti biasa group project ini terdiri dari 3 orang. kalian sendiri yang akan menentukan siapa yang jadi backend dan siapa yang jadi frontend.
 
 ## Github Collaboration
-Github collab akan sangat dinilai disini, commit history dan PR wajib dilakukan di setiap fitur yang kalian develop. TIDAK BOLEH MENGGUNAKAN 1 BRANCH.
+Github collab akan sangat dinilai disini, commit history dan PR wajib dilakukan di setiap fitur yang kalian develop. 
+
+**TIDAK BOLEH MENGGUNAKAN 1 BRANCH**
 
 Repo frontend dan backend boleh dipisah dan boleh digabung juga.
 
