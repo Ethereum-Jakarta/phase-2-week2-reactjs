@@ -31,7 +31,7 @@ Dan Goodluck untuk mengerjakan study material week 2 🚀
 - [Learn React Basic Concepts](https://github.com/RPN-Phase-2/Week2-Reactjs/blob/main/study-material/basic-concept.md)
 - [More React Fundamental : React Todo List](https://github.com/RPN-Phase-2/Week2-Reactjs/blob/main/study-material/react-todo.md)
 - [React Lifecycle Hook](https://github.com/RPN-Phase-2/Week2-Reactjs/blob/main/study-material/lifecycle-hooks.md)
-- [Logic Nolep : React Public API](https://github.com/RPN-Phase-2/Week2-Reactjs/blob/main/study-material/lc-public-api.md)
+- [Logic Nolep : React Public API](https://github.com/RPN-Phase-2/Week2-Reactjs/blob/main/study-material/ln-public-api.md)
 - [React Router](https://github.com/RPN-Phase-2/Week2-Reactjs/blob/main/study-material/react-router.md) 
 - [Tailwind CSS](https://github.com/RPN-Phase-2/Week2-Reactjs/blob/main/study-material/tailwindcss.md)
 - [Logic Nolep : React Inventory](https://github.com/RPN-Phase-2/Week2-Reactjs/blob/main/study-material/ln-react-inventory.md)
