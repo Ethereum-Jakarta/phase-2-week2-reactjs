@@ -28,3 +28,9 @@ poin plus:
 - Dashboard or Analytics Page
 - Email Confirmation
 - Checkout feature & Transaction
+
+## After Finish Task
+
+Setelah selesai dengan tugas ini, kalian bisa lanjut next part untuk mengetahui apa itu react router.
+
+Next Part -> [Soft Skills : Time Management](https://github.com/RPN-Phase-2/Week2-Reactjs/blob/main/study-material/sk-time-management.md)
