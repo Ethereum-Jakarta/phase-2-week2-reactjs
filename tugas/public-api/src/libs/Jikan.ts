@@ -1,3 +1,5 @@
+import { bloclistMalId } from "./constants";
+
 const baseURL = "https://api.jikan.moe";
 export type AnimeDataItem = {
   mal_id: number;
@@ -43,5 +45,7 @@ export async function searchAnime(query?: string, page = 1) {
   });
   if (query) searchParam.append("q", query);
   const url = new URL(`/v4/anime?${searchParam}`, baseURL);
-  return fetch(url).then(x => x.json()) as Promise<SearchAnimeResponse>;
+  return fetch(url)
+    .then(x => x.json() as Promise<SearchAnimeResponse>)
+    .then(x => ({ ...x, data: x.data.filter(y => !bloclistMalId.includes(y.mal_id))}));
 }
