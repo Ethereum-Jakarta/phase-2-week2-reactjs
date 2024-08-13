@@ -1,5 +1,5 @@
 import React from 'react';
-import CardChar from './CardChar';
+import CardCharacter from './CardCharacter';
 import { akatsuki } from '@/data/character';
 
 export default function SectionUno() {
@@ -10,9 +10,10 @@ export default function SectionUno() {
           <div className="max-w-[1440px]">
             {/* item container */}
             <div className="grid grid-cols-5 items-center">
-              {akatsuki.map(({ image, width, scale }) => {
+              {akatsuki.map(({ image, width, scale, name }) => {
                 return (
-                  <CardChar
+                  <CardCharacter
+                    to={name}
                     image={`images/blue-archive/${image}`}
                     width={width}
                     scale={scale || 0}

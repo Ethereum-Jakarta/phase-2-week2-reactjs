@@ -8,6 +8,7 @@ module.exports = {
       },
       backgroundImage: {
         'sky-blue': "url('assets/images/sky-blue.webp')",
+        akane: "url('assets/images/airi_band.webp')",
       },
     },
   },
