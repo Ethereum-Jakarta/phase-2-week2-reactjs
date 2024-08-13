@@ -6,6 +6,9 @@ module.exports = {
       fontFamily: {
         custom: ['naruto-font', 'sans-serif'],
       },
+      backgroundImage: {
+        'sky-blue': "url('assets/images/sky-blue.webp')",
+      },
     },
   },
   plugins: [],
