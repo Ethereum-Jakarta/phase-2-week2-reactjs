@@ -1,4 +1,3 @@
-import eva from '@/assets/images/sky-blue.png';
 import CardCharacter from './CardCharacter';
 import { evangelion } from '@/data/character';
 
