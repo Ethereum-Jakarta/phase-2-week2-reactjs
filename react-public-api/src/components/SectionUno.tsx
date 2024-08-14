@@ -1,6 +1,6 @@
 import eva from '@/assets/images/sky-blue.png';
 import CardCharacter from './CardCharacter';
-import { akatsuki } from '@/data/character';
+import { evangelion } from '@/data/character';
 
 export default function SectionUno() {
   return (
@@ -15,7 +15,7 @@ export default function SectionUno() {
             />
             {/* item container */}
             <div className="flex flex-row justify-between items-end">
-              {akatsuki.map(({ image, width, scale, name, bottom, evaId }) => {
+              {evangelion.map(({ image, width, scale, name, bottom, evaId }) => {
                 return (
                   <>
                     <CardCharacter

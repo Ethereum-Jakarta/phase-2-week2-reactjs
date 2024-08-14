@@ -1,10 +1,8 @@
-import { responseAPI } from "@/types/response";
+import { JikanResponse } from "@/types/jikanResponse";
 
-export const getAllStudents = async () => {
-  const data = await fetch(
-    `https://api-blue-archive.vercel.app/api/characters/students`
-  );
-  const res: responseAPI = await data.json();
+export const getCharacter = async ({ id }: { id: string; }) => {
+  const data = await fetch(`https://api.jikan.moe/v4/characters/${id}/full`).then((response) => response.json());
 
-  return res.data;
+  const res: JikanResponse = await data.json();
+  return res;
 };
