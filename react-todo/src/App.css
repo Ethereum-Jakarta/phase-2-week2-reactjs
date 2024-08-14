@@ -1,0 +1,70 @@
+.App {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background-color: #161c24;
+}
+
+form {
+  display: flex;
+  margin-bottom: 20px;
+}
+
+input[type='text'] {
+  flex-grow: 1;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  background-color: #fdfdfe;
+}
+
+button {
+  padding: 10px 20px;
+  background-color: #43b2e2;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-left: 10px;
+}
+
+.todo-item {
+  background-color: rgba(99, 99, 99, 0.115);
+  border: 1px solid;
+  border-radius: 5px;
+  border-color: #43b2e2;
+  padding: 10px;
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: white;
+}
+
+.todo-item:hover {
+  transform: translateX(-0.5rem);
+  box-shadow: 0 20px 35px -25px #43b2e2;
+  cursor: pointer;
+}
+
+.date {
+  font-size: 12px;
+  color: #888;
+}
+
+#todo-left {
+  display: flex;
+  flex-direction: row;
+  gap: 10px 10px;
+}
+
+#todo-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+}
