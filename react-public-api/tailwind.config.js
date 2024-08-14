@@ -21,6 +21,15 @@ module.exports = {
         [`eva-pilot-08`]: "url('assets/images/evangelion/mari.png')",
         [`eva-pilot-06`]: "url('assets/images/evangelion/kaworu.png')",
       },
+      keyframes: {
+        fadeIn: {
+          '0%': { opacity: 0, transform: 'translateY(20px)' },
+          '100%': { opacity: 1, transform: 'translateY(0)' },
+        },
+      },
+      animation: {
+        fadeIn: 'fadeIn 0.5s ease-in-out forwards',
+      },
       dropShadow: {
         custom: '0px 0px 5px #aeaeae',
         ['custom-xl']: '10px 10px 5px #aeaeae',
