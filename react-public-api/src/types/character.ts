@@ -3,4 +3,5 @@ export interface characterType {
   image: string;
   width?: number;
   scale?: number;
+  bottom?: number;
 }

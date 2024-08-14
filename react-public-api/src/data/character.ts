@@ -1,9 +1,9 @@
 import { characterType } from "@/types/character";
 
 export const akatsuki: characterType[] = [
-  { name: "Airi", image: "airi.png", width: 250, scale: 1 },
-  { name: "Akane", image: "akane.png", width: 280, scale: 1 },
-  { name: "Akari", image: "akari.png", width: 420, scale: 1.25 },
-  { name: "Ako", image: "ako.png", width: 180, scale: 1 },
-  { name: "Arisu", image: "arisu.png", width: 550, scale: 1 },
+  { name: "Airi", image: "rei.png", width: 280, scale: 1, bottom: 0 },
+  { name: "Akane", image: "asuka.png", width: 280, scale: 1.15, bottom: 40 },
+  { name: "Akari", image: "ikari.png", width: 280, scale: 1, bottom: 0 },
+  { name: "Ako", image: "mari.png", width: 280, scale: 1, bottom: 0 },
+  { name: "Arisu", image: "kaworu.png", width: 280, scale: 1, bottom: 0 },
 ];
