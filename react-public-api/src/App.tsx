@@ -36,7 +36,7 @@ function App() {
             id={name}
             key={index}
             className={twMerge(
-              'snap-start min-h-screen z-40 bg-blue-500 bg-opacity-75 relative mt-[100vh] backdrop-blur',
+              'snap-start min-h-screen z-40 bg-[#128afa] bg-opacity-75 relative mt-[100vh] backdrop-blur',
               index > 0 && 'mt-0',
             )}>
             <div className=" w-full h-screen bg-akane bg-no-repeat bg-[length:50%] bg-top">ok</div>

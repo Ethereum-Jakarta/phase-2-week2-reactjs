@@ -7,7 +7,7 @@ module.exports = {
         custom: ['naruto-font', 'sans-serif'],
       },
       backgroundImage: {
-        'sky-blue': "url('assets/images/sky-blue.webp')",
+        'sky-blue': "url('assets/images/sky-blue.jpg')",
         akane: "url('assets/images/airi_band.webp')",
       },
     },
