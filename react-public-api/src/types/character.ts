@@ -4,4 +4,5 @@ export interface characterType {
   width?: number;
   scale?: number;
   bottom?: number;
+  evaId?: string;
 }
