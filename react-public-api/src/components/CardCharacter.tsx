@@ -19,7 +19,7 @@ function CardCharacter({
   return (
     <div
       className={clsx(
-        'h-screen z-10 flex items-end justify-center w-full hover:bg-opacity-25 relative',
+        'md:h-screen h-screen z-10 flex items-end justify-center w-full hover:bg-opacity-25 relative',
         {
           'bg-eva00': evaId === 'eva00',
           'bg-eva01': evaId === 'eva01',
@@ -29,7 +29,6 @@ function CardCharacter({
         },
       )}
       style={{
-        // backgroundImage: `url('https://static.wikia.nocookie.net/naruto/images/2/25/Jinin.png')`,
         backgroundRepeat: 'no-repeat',
         backgroundSize: 'cover',
       }}>
@@ -44,8 +43,7 @@ function CardCharacter({
         <img
           src={image}
           alt="char"
-          width={width}
-          className={`hover:scale-110 cursor-pointer`}
+          className={clsx(`hover:scale-110 cursor-pointer min-w-[${width}px] duration-300`)}
           style={{ scale: `${scale + ''}` }}
         />
       </Link>
