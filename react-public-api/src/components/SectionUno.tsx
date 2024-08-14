@@ -4,7 +4,7 @@ import { evangelion } from '@/data/character';
 export default function SectionUno() {
   return (
     <div className="block">
-      <div className="md:fixed top-0 bg-black left-0 h-full w-full z-10 flex justify-center ">
+      <div className="md:fixed  overflow-hidden top-0 bg-black left-0 h-full w-full z-10 flex justify-center ">
         <div className="md:h-screen h-fit max-w-[1864px] w-full flex flex-row justify-center bg-eva bg-center md:bg-bottom bg-no-repeat bg-contain px-0">
           <div className="w-full h-full relative">
             {/* <img
