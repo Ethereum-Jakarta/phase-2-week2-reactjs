@@ -1,7 +1,4 @@
-import React from 'react';
-import { akatsuki } from '@/data/character';
 import eva from '@/assets/images/sky-blue.png';
-import CardCharacter from './CardCharacter';
 
 export default function SectionUno() {
   return (
