@@ -1,5 +1,5 @@
+import clsx from 'clsx';
 import { Link } from 'react-scroll';
-import { twMerge } from 'tailwind-merge';
 
 function CardCharacter({
   image,
@@ -18,9 +18,15 @@ function CardCharacter({
 }) {
   return (
     <div
-      className={twMerge(
+      className={clsx(
         'h-screen z-10 flex items-end justify-center w-full hover:bg-opacity-25 relative',
-        `bg-${evaId}`,
+        {
+          'bg-eva00': evaId === 'eva00',
+          'bg-eva01': evaId === 'eva01',
+          'bg-eva02': evaId === 'eva02',
+          'bg-eva06': evaId === 'eva06',
+          'bg-eva08': evaId === 'eva08',
+        },
       )}
       style={{
         // backgroundImage: `url('https://static.wikia.nocookie.net/naruto/images/2/25/Jinin.png')`,

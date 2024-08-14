@@ -20,6 +20,13 @@ module.exports = {
         custom: '0px 0px 5px #aeaeae',
         ['custom-xl']: '10px 10px 5px #aeaeae',
       },
+      backgroundColor: {
+        'custom-eva00': '#f58507',
+        'custom-eva01': '#804cf7',
+        'custom-eva02': '#f4081c',
+        'custom-eva08': '#f5a5c8',
+        'custom-eva06': '#001e4d',
+      },
     },
   },
   plugins: [],

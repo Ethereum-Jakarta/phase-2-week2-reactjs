@@ -1,3 +1,5 @@
+
+export type eva = 'eva00' | 'eva01' | 'eva02' | 'eva08' | 'eva06';
 export interface characterType {
   id: number;
   animeId: number;
@@ -6,6 +8,6 @@ export interface characterType {
   width?: number;
   scale?: number;
   bottom?: number;
-  evaId?: string;
+  evaId?: eva;
   evaColor?: string;
 }
