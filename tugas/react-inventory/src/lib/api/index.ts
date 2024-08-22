@@ -1,5 +1,3 @@
-import { cdn } from "../constants";
-
 type SavedTokens = {
   access: { token: string, expire: string },
   refresh: { token: string, expire: string }
@@ -157,7 +155,7 @@ export default class ApiClient {
     const form = new FormData();
     form.append("file", file);
     const response = await this.fetch("upload", "POST", form).then(x => x.json());
-    return cdn + response.file.filename;
+    return response.urls[0].src;
   }
 
   public static initFromStorage() {

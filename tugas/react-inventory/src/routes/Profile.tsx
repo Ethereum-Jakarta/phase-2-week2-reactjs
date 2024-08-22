@@ -7,7 +7,6 @@ import LogoutIcon from "../lib/icons/outline/LogoutIcon";
 import LoadingIcon from "../lib/icons/outline/LoadingIcon";
 import { pickBgColorBasedOnString } from "../lib/utils";
 import { LoginInformationContext, NotificationContext } from "../lib/contexes";
-import { cdn } from "../lib/constants";
 
 const VerifyButton: FC<{
   verified: boolean;
@@ -89,7 +88,7 @@ const Profile: FC<{}> = () => {
       <span className="text-[128px] font-bold">{(self?.name ?? "A").charAt(0)}</span>
     </div>
     : <div className="flex justify-center items-center h-[128px] w-[128px]">
-      <img className="flex-shrink-0 min-h-full min-w-auto min-w-full" src={`${cdn}${self?.profileImageId!}`} alt={self?.name + " profile"} />
+      <img className="flex-shrink-0 min-h-full min-w-auto min-w-full" src={self?.profileImageId!} alt={self?.name + " profile"} />
     </div>;
 
   const modalEditClick = async (_: void) => {
