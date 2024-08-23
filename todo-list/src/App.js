@@ -24,7 +24,7 @@ function App() {
 
   return (
     <div className="App">
-      <h1 style={{ textAlign: 'center', color: '#43B2E2' }}>RPN Todo List</h1>
+      <h1 style={{ textAlign: 'center', color: '#43B2E2' }}>ERPEEN Todo List</h1>
       <AddTask onAdd={addTask}/>
       <TodoList tasks={tasks} onToggle={toggleTask} onDelete={deleteTask}/>
     </div>
