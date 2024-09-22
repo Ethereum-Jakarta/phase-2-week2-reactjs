@@ -1,0 +1,67 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url("https://fonts.googleapis.com/css2?family=Galindo&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.App {
+  min-height: 100vh;
+}
+
+.swiper {
+  /* overflow: hidden; */
+  max-width: 730px;
+}
+
+.swiper-wrapper {
+  width: 100%;
+}
+
+.swiper-slide {
+  position: relative;
+  border-radius: 20px;
+}
+
+.swiper-slide img {
+  height: 100%;
+  background-color: rgba(61, 61, 61, 0.386);
+}
+
+#card-backdrop {
+  background: linear-gradient(
+    to top,
+    rgba(0, 0, 0, 0.689) 0%,
+    rgba(255, 255, 255, 0) 50%,
+    rgba(255, 255, 255, 0) 100%
+  );
+  box-shadow: #43b2e2;
+}
+
+#card:hover {
+  transform: translateY(-0.5rem);
+  box-shadow: 0 20px 35px -25px #43b2e2;
+  cursor: pointer;
+}
+
+#detail-img img {
+  z-index: 1;
+}
+
+#backdrop {
+  background: linear-gradient(
+    to right,
+    rgb(0, 0, 0) 0%,
+    rgba(0, 0, 0, 0.772) 50%,
+    rgba(0, 0, 0, 0) 100%
+  );
+}
+
+#title {
+  font-family: "Galindo", sans-serif;
+}
