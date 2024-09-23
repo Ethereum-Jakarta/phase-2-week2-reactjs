@@ -1,9 +1,9 @@
-import { GridHoverHero } from "./components/hero/Hero";
+import Hero from "./components/hero/Hero";
 
 const App = () => {
   return (
     <div className="App">
-      <GridHoverHero />
+      <Hero />{" "}
     </div>
   );
 };

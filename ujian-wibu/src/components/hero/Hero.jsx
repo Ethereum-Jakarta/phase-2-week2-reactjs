@@ -1,67 +1,28 @@
-import { useAnimate } from "framer-motion";
-import React, { useEffect, useState } from "react";
+import Dialog from "../dialog/Dialog";
 
-export const GridHoverHero = () => {
-  const [scope, animate] = useAnimate();
+import { useState } from "react";
 
-  const [size, setSize] = useState({ columns: 0, rows: 0 });
-
-  useEffect(() => {
-    generateGridCount();
-    window.addEventListener("resize", generateGridCount);
-
-    return () => window.removeEventListener("resize", generateGridCount);
-  }, []);
-
-  const generateGridCount = () => {
-    const columns = Math.floor(document.body.clientWidth / 75);
-    const rows = Math.floor(document.body.clientHeight / 75);
-
-    setSize({
-      columns,
-      rows,
-    });
-  };
-
-  const handleMouseLeave = (e) => {
-    // @ts-ignore
-    const id = `#${e.target.id}`;
-    animate(id, { background: "rgba(129, 140, 248, 0)" }, { duration: 1.5 });
-  };
-
-  const handleMouseEnter = (e) => {
-    // @ts-ignore
-    const id = `#${e.target.id}`;
-    animate(id, { background: "rgba(129, 140, 248, 1)" }, { duration: 0.15 });
-  };
-
+const Hero = () => {
+  const [isOpen, setIsOpen] = useState(false);
   return (
-    <div className="bg-neutral-950">
-      <div
-        ref={scope}
-        className="grid h-screen w-full grid-cols-[repeat(auto-fit,_minmax(75px,_1fr))] grid-rows-[repeat(auto-fit,_minmax(75px,_1fr))]"
+    <section className="flex flex-col items-center justify-center h-screen">
+      <h1 className="text-center text-4xl font-black uppercase text-black sm:text-5xl md:text-6xl">
+        UJIAN WIBU
+      </h1>
+
+      <p className="mb-6 mt-4 max-w-3xl font-bold text-center text-lg  text-lime-700 md:text-xl">
+        Your Score: 0
+      </p>
+
+      <button
+        className="pointer-events-auto bg-lime-500 px-4 py-2 text-xl font-bold uppercase text-white"
+        onClick={() => setIsOpen(!isOpen)}
       >
-        {[...Array(size.rows * size.columns)].map((_, i) => (
-          <div
-            key={i}
-            id={`square-${i}`}
-            onMouseLeave={handleMouseLeave}
-            onMouseEnter={handleMouseEnter}
-            className="h-full w-full border-[1px] border-neutral-900"
-          />
-        ))}
-      </div>
-      <div className="pointer-events-none absolute inset-0 flex flex-col items-center justify-center p-8">
-        <h1 className="text-center text-4xl font-black uppercase text-white sm:text-5xl md:text-6xl">
-          Ujian Anime{" "}
-        </h1>
-        <p className="mb-6 mt-4 max-w-3xl text-center text-lg font-light text-lime-500 md:text-xl">
-          Last Score: 0
-        </p>
-        <button className="pointer-events-auto bg-lime-400 px-4 py-2 text-xl font-bold uppercase text-neutral-950 mix-blend-difference">
-          Mulai
-        </button>
-      </div>
-    </div>
+        Mulai{" "}
+      </button>
+      {isOpen && <Dialog isOpen={isOpen} setIsOpen={setIsOpen} />}
+    </section>
   );
 };
+
+export default Hero;
