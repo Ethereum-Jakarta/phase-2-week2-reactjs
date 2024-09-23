@@ -58,7 +58,7 @@ export const GridHoverHero = () => {
         <p className="mb-6 mt-4 max-w-3xl text-center text-lg font-light text-lime-500 md:text-xl">
           Last Score: 0
         </p>
-        <button className="pointer-events-auto bg-indigo-400 px-4 py-2 text-xl font-bold uppercase text-neutral-950 mix-blend-difference">
+        <button className="pointer-events-auto bg-lime-400 px-4 py-2 text-xl font-bold uppercase text-neutral-950 mix-blend-difference">
           Mulai
         </button>
       </div>
