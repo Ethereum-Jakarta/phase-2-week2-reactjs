@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 
-const Timer = ({ initialTime = 30, onComplete }) => {
+const Timer = ({ initialTime = 20, onComplete }) => {
   const [time, setTime] = useState(initialTime);
 
   useEffect(() => {
@@ -10,11 +10,10 @@ const Timer = ({ initialTime = 30, onComplete }) => {
         setTime((prevTime) => prevTime - 1);
       }, 1000);
     } else if (time === 0) {
-      //   onComplete();
-      console.log("onComplete");
+      onComplete();
     }
     return () => clearInterval(interval);
-  }, [time, onComplete]);
+  }, [time]);
 
   const progress = ((initialTime - time) / initialTime) * 100;
 
