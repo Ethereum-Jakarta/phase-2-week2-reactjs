@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import "./App.css";
 import AddTask from "./components/AddTask";
 import TodoList from "./components/TodoList";
@@ -23,8 +23,27 @@ function App() {
   };
 
   const deleteTask = (id) => {
-    setTasks(tasks.filter((task) => task.id !== id));
+    let filtered = tasks.filter((task) => task.id !== id);
+    setTasks(filtered);
+
+    localStorage.setItem("tasks", JSON.stringify(filtered));
   };
+
+  useEffect(() => {
+    if (tasks.length !== 0) {
+      localStorage.setItem("tasks", JSON.stringify(tasks));
+    }
+  }, [tasks]);
+
+  useEffect(() => {
+    let previousTasks = JSON.parse(localStorage.getItem("tasks"));
+
+    if (previousTasks) {
+      setTasks(previousTasks);
+    } else {
+      setTasks([]);
+    }
+  }, []);
 
   return (
     <div className="App">
