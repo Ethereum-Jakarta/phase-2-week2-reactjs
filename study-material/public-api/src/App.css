@@ -1,0 +1,180 @@
+* {
+  background-color: rgb(23, 23, 23);
+  color: #fff;
+}
+
+.container {
+  max-width: 900px;
+  margin: auto;
+  padding: 20px;
+  text-align: center;
+  font-family: Arial, sans-serif;
+}
+
+.title {
+  font-size: 28px;
+  color: gold;
+  margin-bottom: 20px;
+}
+
+.search-form {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.search-input {
+  width: 70%;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid gold;
+  border-radius: 5px;
+  outline: none;
+}
+
+.toku-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 20px;
+}
+
+.toku-card {
+  background: #282828;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(255, 215, 0, 0.3);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.toku-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 15px rgba(255, 215, 0, 0.5);
+}
+
+.toku-image {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.toku-name {
+  font-size: 18px;
+  font-weight: bold;
+  margin: 10px 0;
+}
+
+.no-results {
+  color: red;
+  font-size: 18px;
+}
+
+.loading,
+.error {
+  font-size: 18px;
+  font-weight: bold;
+  color: gold;
+}
+
+.per-page-selector {
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+.per-page-selector label {
+  font-size: 16px;
+  font-weight: bold;
+  margin-right: 10px;
+}
+
+.per-page-selector select {
+  padding: 5px;
+  font-size: 16px;
+  border: 1px solid gold;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.page-button {
+  background-color: gold;
+  color: white;
+  border: none;
+  padding: 8px 15px;
+  margin: 0 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.page-button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+.page-info {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.modal-content {
+  padding: 20px;
+  border-radius: 10px;
+  width: 80%;
+  max-width: 400px;
+  text-align: center;
+  position: relative;
+}
+
+.modal-close {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  background: none;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.modal-image {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.modal-title {
+  font-size: 22px;
+  margin: 10px 0;
+}
+
+.download-button {
+  display: inline-block;
+  margin-top: 15px;
+  padding: 10px 15px;
+  font-size: 16px;
+  font-weight: bold;
+  color: white;
+  background-color: gold;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background 0.3s;
+}
+
+.download-button:hover {
+  background-color: darkgoldenrod;
+}
