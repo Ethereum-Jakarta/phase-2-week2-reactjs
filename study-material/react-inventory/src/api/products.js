@@ -1,19 +1,34 @@
 const APP_URL = process.env.REACT_APP_URL + "/products";
+const token = localStorage.getItem("token");
 
 export const getProducts = async () => {
   try {
-    const response = await fetch(APP_URL);
+    const response = await fetch(APP_URL, {
+      method: "GET",
+      headers: {
+        "Content-Type": "application/json",
+        Authorization: token ? `Bearer ${token}` : "",
+      },
+    });
+
     const data = await response.json();
     return data.status === 200 ? data.data : [];
   } catch (error) {
-    console.error("Error fetching Products:", error);
+    console.error("Error fetching products:", error);
     return [];
   }
 };
 
 export const getProduct = async (id) => {
   try {
-    const response = await fetch(`${APP_URL}/${id}`);
+    const response = await fetch(`${APP_URL}/${id}`, {
+      method: "GET",
+      headers: {
+        "Content-Type": "application/json",
+        Authorization: token ? `Bearer ${token}` : "",
+      },
+    });
+
     const data = await response.json();
     return data.status === 200 ? data.data : null;
   } catch (error) {
@@ -22,18 +37,14 @@ export const getProduct = async (id) => {
   }
 };
 
-export const createProduct = async (
-  name,
-  description,
-  price,
-  quantityInStock,
-  categoryId,
-  userId
-) => {
+export const createProduct = async (name, description, price, quantityInStock, categoryId, userId) => {
   try {
     await fetch(APP_URL, {
       method: "POST",
-      headers: { "Content-Type": "application/json" },
+      headers: {
+        "Content-Type": "application/json",
+        Authorization: token ? `Bearer ${token}` : "",
+      },
       body: JSON.stringify({
         name,
         description,
@@ -44,23 +55,18 @@ export const createProduct = async (
       }),
     });
   } catch (error) {
-    console.error("Error adding Product:", error);
+    console.error("Error adding product:", error);
   }
 };
 
-export const updateProduct = async (
-  id,
-  name,
-  description,
-  price,
-  quantityInStock,
-  categoryId,
-  userId
-) => {
+export const updateProduct = async (id, name, description, price, quantityInStock, categoryId, userId) => {
   try {
     await fetch(`${APP_URL}/${id}`, {
       method: "PUT",
-      headers: { "Content-Type": "application/json" },
+      headers: {
+        "Content-Type": "application/json",
+        Authorization: token ? `Bearer ${token}` : "",
+      },
       body: JSON.stringify({
         name,
         description,
@@ -71,14 +77,20 @@ export const updateProduct = async (
       }),
     });
   } catch (error) {
-    console.error("Error updating Product:", error);
+    console.error("Error updating product:", error);
   }
 };
 
 export const deleteProduct = async (id) => {
   try {
-    await fetch(`${APP_URL}/${id}`, { method: "DELETE" });
+    await fetch(`${APP_URL}/${id}`, {
+      method: "DELETE",
+      headers: {
+        "Content-Type": "application/json",
+        Authorization: token ? `Bearer ${token}` : "",
+      },
+    });
   } catch (error) {
-    console.error("Error deleting Product:", error);
+    console.error("Error deleting product:", error);
   }
 };

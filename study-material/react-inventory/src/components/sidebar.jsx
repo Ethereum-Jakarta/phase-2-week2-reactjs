@@ -35,7 +35,7 @@ const Sidebar = ({ children }) => {
       {/* Sidebar */}
       <div
         ref={sidebarRef}
-        className={`fixed top-0 left-0 h-full bg-gray-800 bg-opacity-90 text-white w-64 p-5 transition-transform duration-300 
+        className={`fixed top-0 left-0 h-full bg-gray-800 text-white w-64 p-5 transition-transform duration-300 
         ${isOpen ? "translate-x-0" : "-translate-x-64"} md:translate-x-0 
         shadow-[0_4px_10px_rgba(11,11,11,0.5)] drop-shadow-lg`}
       >

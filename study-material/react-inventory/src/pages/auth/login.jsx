@@ -1,21 +1,45 @@
 import React, { useState } from "react";
 import { FaEnvelope, FaLock } from "react-icons/fa";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
+import { useAuth } from "../../context/AuthContext";
+import { loginUser } from "../../api/auth";
 
 const Login = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
+  const [error, setError] = useState("");
+  const { login } = useAuth();
+  const navigate = useNavigate();
 
-  const handleLogin = (e) => {
+  const handleLogin = async (e) => {
     e.preventDefault();
-    console.log("Email:", email);
-    console.log("Password:", password);
+    setError("");
+
+    if (!email || !password) {
+      setError("Email dan password harus diisi!");
+      return;
+    }
+
+    const data = await loginUser(email, password);
+
+    if (data && data.token) {
+      localStorage.setItem("token", data.token);
+      localStorage.setItem("user", JSON.stringify(data.user));
+      login(data.token, data.user);
+      navigate("/");
+    } else {
+      setError("Login gagal! Periksa email dan password.");
+    }
   };
 
   return (
     <div className="min-h-screen flex items-center justify-center bg-gray-900 px-4">
       <div className="backdrop-blur-lg bg-white/10 border border-white/20 shadow-xl rounded-2xl p-8 w-full max-w-sm text-white">
         <h2 className="text-3xl font-bold text-center mb-6">Login</h2>
+
+        {error && (
+          <p className="text-red-400 text-sm text-center mb-4">{error}</p>
+        )}
 
         <form onSubmit={handleLogin}>
           <div className="mb-4 relative">
@@ -36,7 +60,10 @@ const Login = () => {
           </div>
 
           <div className="mb-4 relative">
-            <label htmlFor="password" className="block text-sm font-medium mb-1">
+            <label
+              htmlFor="password"
+              className="block text-sm font-medium mb-1"
+            >
               Password
             </label>
             <div className="relative">

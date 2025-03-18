@@ -1,8 +1,16 @@
 const APP_URL = process.env.REACT_APP_URL + "/categories";
+const token = localStorage.getItem("token");
 
 export const getCategories = async () => {
   try {
-    const response = await fetch(APP_URL);
+    const response = await fetch(APP_URL, {
+      method: "GET",
+      headers: {
+        "Content-Type": "application/json",
+        Authorization: token ? `Bearer ${token}` : "",
+      },
+    });
+
     const data = await response.json();
     return data.status === 200 ? data.data : [];
   } catch (error) {
@@ -13,7 +21,14 @@ export const getCategories = async () => {
 
 export const getCategory = async (id) => {
   try {
-    const response = await fetch(`${APP_URL}/${id}`);
+    const response = await fetch(`${APP_URL}/${id}`, {
+      method: "GET",
+      headers: {
+        "Content-Type": "application/json",
+        Authorization: token ? `Bearer ${token}` : "",
+      },
+    });
+
     const data = await response.json();
     return data.status === 200 ? data.data : null;
   } catch (error) {
@@ -26,7 +41,10 @@ export const createCategory = async (name) => {
   try {
     await fetch(APP_URL, {
       method: "POST",
-      headers: { "Content-Type": "application/json" },
+      headers: {
+        "Content-Type": "application/json",
+        Authorization: token ? `Bearer ${token}` : "",
+      },
       body: JSON.stringify({ name }),
     });
   } catch (error) {
@@ -38,7 +56,10 @@ export const updateCategory = async (id, name) => {
   try {
     await fetch(`${APP_URL}/${id}`, {
       method: "PUT",
-      headers: { "Content-Type": "application/json" },
+      headers: {
+        "Content-Type": "application/json",
+        Authorization: token ? `Bearer ${token}` : "",
+      },
       body: JSON.stringify({ name }),
     });
   } catch (error) {
@@ -48,7 +69,13 @@ export const updateCategory = async (id, name) => {
 
 export const deleteCategory = async (id) => {
   try {
-    await fetch(`${APP_URL}/${id}`, { method: "DELETE" });
+    await fetch(`${APP_URL}/${id}`, {
+      method: "DELETE",
+      headers: {
+        "Content-Type": "application/json",
+        Authorization: token ? `Bearer ${token}` : "",
+      },
+    });
   } catch (error) {
     console.error("Error deleting category:", error);
   }

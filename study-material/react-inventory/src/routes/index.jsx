@@ -1,4 +1,9 @@
-import { BrowserRouter as Router, Routes, Route, Outlet } from "react-router-dom";
+import {
+  BrowserRouter as Router,
+  Routes,
+  Route,
+  Outlet,
+} from "react-router-dom";
 import Sidebar from "../components/sidebar";
 import Login from "../pages/auth/login";
 import Register from "../pages/auth/register";
@@ -9,6 +14,8 @@ import Product from "../pages/product";
 import Order from "../pages/order";
 import Home from "../pages";
 import NotFound from "../pages/error/404";
+import { AuthProvider } from "../context/AuthContext";
+import ProtectedRoute from "../middleware/ProtectedRoute";
 
 const SidebarLayout = () => {
   return (
@@ -21,26 +28,28 @@ const SidebarLayout = () => {
 const AppRoutes = () => {
   return (
     <Router>
-      <Routes>
-        {/* Public Routes */}
-        <Route path="/login" element={<Login />} />
-        <Route path="/register" element={<Register />} />
+      <AuthProvider>
+        <Routes>
+          {/* Public Routes */}
+          <Route path="/login" element={<Login />} />
+          <Route path="/register" element={<Register />} />
 
-        {/* Protected Routes */}
-        {/* <Route element={}> */}
-          <Route element={<SidebarLayout />}>
-            <Route path="/" element={<Home />} />
-            <Route path="/profile" element={<Profile />} />
-            <Route path="/users" element={<User />} />
-            <Route path="/categories" element={<Category />} />
-            <Route path="/products" element={<Product />} />
-            <Route path="/orders" element={<Order />} />
+          {/* Protected Routes */}
+          <Route element={<ProtectedRoute />}>
+            <Route element={<SidebarLayout />}>
+              <Route path="/" element={<Home />} />
+              <Route path="/profile" element={<Profile />} />
+              <Route path="/users" element={<User />} />
+              <Route path="/categories" element={<Category />} />
+              <Route path="/products" element={<Product />} />
+              <Route path="/orders" element={<Order />} />
+            </Route>
           </Route>
-        {/* </Route> */}
 
-        {/* Not Found Page */}
-        <Route path="*" element={<NotFound />} />
-      </Routes>
+          {/* Not Found Page */}
+          <Route path="*" element={<NotFound />} />
+        </Routes>
+      </AuthProvider>
     </Router>
   );
 };

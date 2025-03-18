@@ -1,9 +1,11 @@
 import { useState, useEffect, useRef } from "react";
 import { FaUser } from "react-icons/fa";
-import { Link, useLocation } from "react-router-dom";
+import { Link, useNavigate, useLocation } from "react-router-dom";
+import { logoutUser } from "../api/auth";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const navigate = useNavigate();
   const location = useLocation();
   const dropdownRef = useRef(null);
 
@@ -18,6 +20,12 @@ const Navbar = () => {
       document.removeEventListener("mousedown", handleClickOutside);
     };
   }, []);
+
+  const handleLogout = () => {
+    logoutUser();
+    setIsOpen(false);
+    navigate("/login");
+  };
 
   return (
     <nav className="bg-gray-800 text-white shadow-[0_4px_10px_rgba(11,11,11,0.5)] drop-shadow-lg">
@@ -49,13 +57,12 @@ const Navbar = () => {
                     </Link>
                   </li>
                   <li>
-                    <Link
-                      to="/logout"
-                      className="block px-4 py-2 text-white hover:bg-red-600"
-                      onClick={() => setIsOpen(false)}
+                    <button
+                      className="block w-full text-left px-4 py-2 text-white hover:bg-red-600"
+                      onClick={handleLogout}
                     >
                       Logout
-                    </Link>
+                    </button>
                   </li>
                 </ul>
               </div>
