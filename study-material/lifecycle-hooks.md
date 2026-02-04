@@ -286,7 +286,7 @@ function App() {
 
   return (
     <div className="App">
-      <h1 style={{textAlign: 'center', color: '#43B2E2'}}>RPN Todo List</h1>
+      <h1 style={{textAlign: 'center', color: '#43B2E2'}}>ETHJKT Todo List</h1>
       <AddTask onAdd={addTask} />
       <TodoList tasks={tasks} onToggle={toggleTask} onDelete={deleteTask}/>
     </div>
@@ -310,7 +310,7 @@ https://github.com/user-attachments/assets/a1ba28fe-7a20-4b12-ba09-ae708506f41d
 
 Selanjutnya kalian akan mengerjakan logic challange pertama di reacjt js.
 
-Next Part -> [Logic Challange : React Public API](https://github.com/RPN-Phase-2/Week2-Reactjs/blob/main/study-material/lc-public-api.md)
+Next Part -> [Logic Challange : React Public API](https://github.com/Ethereum-Jakarta/phase-2-week2-reactjs/blob/main/study-material/lc-public-api.md)
 
 
 

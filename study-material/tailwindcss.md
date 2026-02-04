@@ -212,7 +212,7 @@ https://tailwindcss.com/
 
 Dokumentasi tailwind ini cukup simple dan mudah dipelajarin, jadi coba deep dive langsung untuk baca baca dokumentasinya.
 
-dan terakhir, kalian juga bisa explore komponen-komponen react yang ada di RPN Movie APP. disana ada beberapa case tailwind yang sangat berguna buat kalian kedepannya.
+dan terakhir, kalian juga bisa explore komponen-komponen react yang ada di ETHJKT Movie APP. disana ada beberapa case tailwind yang sangat berguna buat kalian kedepannya.
 
 ```JSX
 import { BASE_TMDB_IMAGE_URL, MOVIE_POSTER_SIZE } from "@/config"
@@ -300,5 +300,5 @@ https://www.youtube.com/watch?v=tS7upsfuxmo&t=11s
 
 Selanjutkan kalian akan mengerjakan Logic Nolep IS menggunakan tailwind css
 
-[Logic Nolep : React Inventory](https://github.com/RPN-Phase-2/Week2-Reactjs/blob/main/study-material/ln-react-inventory.md)
+[Logic Nolep : React Inventory](https://github.com/Ethereum-Jakarta/phase-2-week2-reactjs/blob/main/study-material/ln-react-inventory.md)
 

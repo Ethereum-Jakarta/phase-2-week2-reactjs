@@ -12,7 +12,7 @@ Repo frontend dan backend boleh dipisah dan boleh digabung juga.
 Pastikan kalian akan membuat Team di organization phase 2 dan sesuaikan nama team nya dengan nama project kalian, invite semua member dan buat repository group project disana.
 
 ## Submit Tugas
-Di Group Project kalian buat repo sendiri di Team organization dan set up masing masing, nanti link githubnya bisa kalian taruh di PR week1 . nanti gua bakal schedule dan umumin untuk kalian demo group project ini ke semua anak RPN (Demo Stage).
+Di Group Project kalian buat repo sendiri di Team organization dan set up masing masing, nanti link githubnya bisa kalian taruh di PR week1 . nanti gua bakal schedule dan umumin untuk kalian demo group project ini ke semua anak ETHJKT (Demo Stage).
 
 ## Backend
 Kalian boleh menggunakan zexo template backend atau menggunakan arsitektur backend lain

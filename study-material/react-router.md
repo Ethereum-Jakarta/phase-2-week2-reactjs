@@ -240,7 +240,7 @@ Silahkan explore dokumentasi React Router ini untuk menambah wawasan kalian dala
 
 https://reactrouter.com/en/main
 
-## Implementasi React Router (RPN Movie APP)
+## Implementasi React Router (ETHJKT Movie APP)
 
 Misal dengnan contoh tadi kalian belum cukup untuk mengerti react router, gua udah nyiapin material project gimana cara perfom react router dom dalam real app.
 
@@ -365,7 +365,7 @@ bisa kalian lihat url browser `http://localhost:3000/search/query=marvel`, akan 
 
 Materi selanjutnya kalian akan belajar tailwind css , kalau kalian lihat RPN Movie project ini memakai tailwind css untuk styling componentnya.
 
-Saatnya belajar tailwind css di materi selanjutnya -> [Tailwind CSS](https://github.com/RPN-Phase-2/Week2-Reactjs/blob/main/study-material/tailwindcss.md)
+Saatnya belajar tailwind css di materi selanjutnya -> [Tailwind CSS](https://github.com/Ethereum-Jakarta/phase-2-week2-reactjs/blob/main/study-material/tailwindcss.md)
 
 
 

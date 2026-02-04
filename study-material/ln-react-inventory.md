@@ -10,7 +10,7 @@ Fitur tambahan, di Table product tambahkan img_url. jadi frontend kalian harus b
 
 untuk tutorial upload img di backend bisa check updated materi phase 1, di week3 sudah ditambahkan materi cara upload image dibackend menggunakan middleware multer.
 
-https://github.com/RPN-Phase-1/Week3-Backend-MVC-Database/blob/main/study_material/middleware.md
+https://github.com/Ethereum-Jakarta/phase-1-week3-backend-database/blob/main/study_material/middleware.md
 
 Tools Wajib Reactjs + Tailwind CSS.
 
@@ -33,4 +33,4 @@ poin plus:
 
 Setelah selesai dengan tugas ini, kalian bisa lanjut next part untuk mengetahui apa itu react router.
 
-Next Part -> [Soft Skills : Time Management](https://github.com/RPN-Phase-2/Week2-Reactjs/blob/main/study-material/sk-time-management.md)
+Next Part -> [Soft Skills : Time Management](https://github.com/Ethereum-Jakarta/phase-2-week2-reactjs/blob/main/study-material/sk-time-management.md)

@@ -348,7 +348,7 @@ Jangan lupa untuk explore hal lain dalam JSX, disini kalian hanya melihat gimana
 JSX bisa melakukan lebih dari itu, kalian cukup perlu terus untuk melatih membuat component agar melihat hal" baru yang ada di JSX. 
 
 
-Next Part -> [React Todo : More Fundamental](https://github.com/RPN-Phase-2/Week2-Reactjs/blob/main/study-material/react-todo.md)
+Next Part -> [React Todo : More Fundamental](https://github.com/Ethereum-Jakarta/phase-2-week2-reactjs/blob/main/study-material/react-todo.md)
 
 
 

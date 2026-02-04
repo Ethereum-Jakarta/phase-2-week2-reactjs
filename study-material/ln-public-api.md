@@ -44,4 +44,4 @@ Explore code gua buat membantu belajar kalian di reactjs.
 
 Setelah selesai dengan tugas ini, kalian bisa lanjut next part untuk mengetahui apa itu react router.
 
-Next Part -> [React Router](https://github.com/RPN-Phase-2/Week2-Reactjs/blob/main/study-material/react-router.md)
+Next Part -> [React Router](https://github.com/Ethereum-Jakarta/phase-2-week2-reactjs/blob/main/study-material/react-router.md)

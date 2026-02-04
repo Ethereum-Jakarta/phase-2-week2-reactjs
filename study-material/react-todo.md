@@ -18,7 +18,7 @@ import './App.css';
 function App() {
   return (
     <div className="App">
-      <h1>RPN Todo List</h1>
+      <h1>ETHJKT Todo List</h1>
     </div>
   );
 }
@@ -65,7 +65,7 @@ import './App.css';
 function App() {
   return (
     <div className="App">
-      <h1 style={{textAlign: 'center', color: '#43B2E2'}}>RPN Todo List</h1>
+      <h1 style={{textAlign: 'center', color: '#43B2E2'}}>ETHJKT Todo List</h1>
     </div>
   );
 }
@@ -171,7 +171,7 @@ function App() {
 
   return (
     <div className="App">
-      <h1 style={{textAlign: 'center', color: '#43B2E2'}}>RPN Todo List</h1>
+      <h1 style={{textAlign: 'center', color: '#43B2E2'}}>ETHJKT Todo List</h1>
       <AddTask onAdd={addTask} />
     </div>
   );
@@ -330,7 +330,7 @@ function App() {
 
   return (
     <div className="App">
-      <h1 style={{textAlign: 'center', color: '#43B2E2'}}>RPN Todo List</h1>
+      <h1 style={{textAlign: 'center', color: '#43B2E2'}}>ETHJKT Todo List</h1>
       <AddTask onAdd={addTask} />
       <TodoList tasks={tasks}/>
     </div>
@@ -453,7 +453,7 @@ function App() {
 
   return (
     <div className="App">
-      <h1 style={{textAlign: 'center', color: '#43B2E2'}}>RPN Todo List</h1>
+      <h1 style={{textAlign: 'center', color: '#43B2E2'}}>ETHJKT Todo List</h1>
       <AddTask onAdd={addTask} />
       <TodoList tasks={tasks} onToggle={toggleTask} onDelete={deleteTask}/>
     </div>
@@ -584,7 +584,7 @@ Push react-todo ini repo week2, karena react-todo ini masih dipakai untuk materi
 dan jangan lupa selalu explore dokumentasi reactjs.
 
 
-Next Part -> [React Lifecycle Hook](https://github.com/RPN-Phase-2/Week2-Reactjs/blob/main/study-material/lifecycle-hooks.md)
+Next Part -> [React Lifecycle Hook](https://github.com/Ethereum-Jakarta/phase-2-week2-reactjs/blob/main/study-material/lifecycle-hooks.md)
 
 
 
