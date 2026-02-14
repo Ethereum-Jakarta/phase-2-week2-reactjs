@@ -31,10 +31,10 @@ Dan Goodluck untuk mengerjakan study material week 2 🚀
 - [Learn React Basic Concepts](https://github.com/Ethereum-Jakarta/phase-2-week2-reactjs/blob/main/study-material/basic-concept.md)
 - [More React Fundamental : React Todo List](https://github.com/Ethereum-Jakarta/phase-2-week2-reactjs/blob/main/study-material/react-todo.md)
 - [React Lifecycle Hook](https://github.com/Ethereum-Jakarta/phase-2-week2-reactjs/blob/main/study-material/lifecycle-hooks.md)
-- [Logic Nolep : React Public API](https://github.com/Ethereum-Jakarta/phase-2-week2-reactjs/blob/main/study-material/ln-public-api.md)
+- [Arcane Quest : React Public API](https://github.com/Ethereum-Jakarta/phase-2-week2-reactjs/blob/main/study-material/ln-public-api.md)
 - [React Router](https://github.com/Ethereum-Jakarta/phase-2-week2-reactjs/blob/main/study-material/react-router.md) 
 - [Tailwind CSS](https://github.com/Ethereum-Jakarta/phase-2-week2-reactjs/blob/main/study-material/tailwindcss.md)
-- [Logic Nolep : React Inventory](https://github.com/Ethereum-Jakarta/phase-2-week2-reactjs/blob/main/study-material/ln-react-inventory.md)
+- [Arcane Quest : React Inventory](https://github.com/Ethereum-Jakarta/phase-2-week2-reactjs/blob/main/study-material/ln-react-inventory.md)
 - [Soft Skills : Time Management](https://github.com/Ethereum-Jakarta/phase-2-week2-reactjs/blob/main/study-material/sk-time-management.md)
 - [Group Project Week2](https://github.com/Ethereum-Jakarta/phase-2-week2-reactjs/blob/main/study-material/gp-week2.md)
 
