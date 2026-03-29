@@ -1,0 +1,6 @@
+export * from "./highlight-slider"
+export * from "./movie"
+export * from "./navbar"
+export * from "./footer"
+export * from "./page-not-found"
+export * from "./breadcumb"
